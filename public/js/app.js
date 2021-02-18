@@ -33,7 +33,6 @@ weatherForm.addEventListener('submit', (e) => {
                 if (data.icon == 'clear-day') {
                     document.body.style.backgroundImage = `url(img/walls/clear-day.png)`;
                     document.getElementById('icon').src = 'img/icons/clear-day.png';
-                    document.querySelector('.card2').style.background = 'linear-gradient(to right, #16222a, #3a6073)';
                 } else if (data.icon == 'clear-night') {
                     document.body.style.backgroundImage = `url(img/walls/clear-night.png)`;
                     document.getElementById('icon').src = 'img/icons/clear-night.png';
