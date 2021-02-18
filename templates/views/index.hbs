@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sky! Info - Get Real Time Weather Info</title>
+    <link rel="icon" href="/img/icons/icon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+
+
+</head>
+
+<body>
+    <div class="container-fluid px-1 px-sm-3 py-2 mx-auto">
+        <div class="row d-flex justify-content-center">
+            <div class="row card0">
+                <div class="card1 col-lg-8 col-md-7"> <small>
+                        <img style="height:80px;cursor:pointer; " src="img/icons/cloudy.png"><span>Sky! Info</span>
+                    </small>
+                    <div class="text-center"> <img id="icon" class="image mt-5" src="{{image}}"> </div>
+                    <div class="row px-3 mt-3 mb-3">
+                        <h1 id="temp" class="display-1 mr-3">{{temp}}&#176;</h1>
+                        <div class="d-flex flex-column mr-3">
+                            <h2 id="placeName" class="mt-3 mb-0">{{placeName}}</h2> <small
+                                id="address">{{address}}</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="card2 col-lg-4 col-md-5">
+                    <form id="wForm" class="row px-3">
+                        <input type="text" id="searchInp" name="location" placeholder="Try Another location..."
+                            class="mb-5 bg-transparent" required autofocus autocomplete="off">
+                        <button type="submit"
+                            class="fa bg-transparent border-0 fa-search p-0 text-white mb-5 mt-3 mr-0 text-center"></button>
+                    </form>
+                    <div class="mr-5">
+                        <p id="errorMsg" class="light-text text-danger"></p>
+                        <p id="summary" class="light-text ">{{summary}}</p>
+                        <p id="rain" class="light-text ">{{rain}}</p>
+                        <div class="line my-4"></div>
+                        <div class="row px-3">
+                            <p class="light-text">Pressure</p>
+                            <p class="ml-auto">{{pressure}}</p>
+                        </div>
+                        <div class="row px-3">
+                            <p id="humidity" class="light-text"> Humidity</p>
+                            <p class="ml-auto">{{humidity}}</p>
+                        </div>
+                        <div class="row px-3">
+                            <p class="light-text">Wind</p>
+                            <p id="windSpeed" class="ml-auto">{{windSpeed}}</p>
+                        </div>
+                        <div class="row px-3">
+                            <p class="light-text">Min. Temperature</p>
+                            <p id="tempMin" class="ml-auto">{{tempMin}}&#176;</p>
+                        </div>
+                        <div class="row px-3">
+                            <p class="light-text">Max. Temperature</p>
+                            <p id="tempMax" class="ml-auto">{{tempMax}}&#176;</p>
+                        </div>
+                        <div class="line mt-3"></div>
+                        <div class="row px-3">
+                            <div class="col text-center mt-4" id="social">
+                                <a target="_blank" href="https://www.facebook.com/"><i
+                                        class="fa fa-fw fa-facebook"></i></a>
+                                <a target="_blank" href="https://www.twitter.com/"><i
+                                        class="fa fa-fw  fa-twitter"></i></a>
+                                <a target="_blank" href="https://plus.google.com/"><i
+                                        class="fa fa-fw  fa-google-plus"></i></a>
+                                <a target="_blank" href="https://www.linkedin.com/"><i
+                                        class="fa fa-fw fa-linkedin"></i></a>
+                                <a target="_blank" href="https://www.instagram.com/"><i
+                                        class="fa fa-fw fa-instagram"></i></a>
+                                <a target="_blank" href="https://www.youtube.com/"><i
+                                        class="fa fa-fw fa-youtube"></i></a>
+                                        <p>By: Saurabh Jatu</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+<script src="/js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+body {
+    overflow-x: hidden;
+    height: 100%;
+    background-image: linear-gradient(#81D4FA, #2196F3);
+    background:url(/img/walls/cloudy-day.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.card0 {
+    width: 94%
+}
+
+.card1 {
+    background-image: linear-gradient(#2196F3, #81D4FA);
+    background:rgba(255, 255, 255, 0.1);
+    padding: 30px 20px 30px 50px;
+}
+
+.image {
+    width: 300px;
+    height: 300px
+}
+
+.large-font {
+    font-size: 70px;
+}
+
+.fa-sun-o {
+    font-size: 22px
+}
+
+.card2 {
+    background-color: #607D8B;
+    background: rgba(0,0,0,0.5);
+    background: linear-gradient(90deg, hsla(233, 100%, 90%, 1) 0%, hsla(0, 0%, 89%, 1) 100%);
+    background:linear-gradient(to right, #16222a, #3a6073);
+
+
+
+    padding: 0px 0px 40px 40px
+}
+
+input {
+    background-color: #607D8B;
+    padding: 24px 0px 12px 0px !important;
+    width: 80%;
+    box-sizing: border-box;
+    border: none !important;
+    border-bottom: 1px solid #CFD8DC !important;
+    font-size: 16px !important;
+    color: #fff !important
+}
+
+input:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border-bottom: 1px solid #fff !important;
+    outline-width: 0;
+    font-weight: 400
+}
+
+::placeholder {
+    color: #B0BEC5 !important;
+    opacity: 1
+}
+
+:-ms-input-placeholder {
+    color: #B0BEC5 !important
+}
+
+::-ms-input-placeholder {
+    color: #B0BEC5 !important
+}
+
+.fa-search {
+    color: #607D8B;
+    background-color: #E1F5FE;
+    font-size: 20px;
+    padding: 20px;
+    cursor: pointer
+}
+
+.light-text {
+    color: #B0BEC5
+}
+#social a {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #111111;
+    padding:10px;
+    margin-top:10px;
+}
+
+#social p {
+    padding:10px;
+    margin-top:10px;
+}
+.line {
+    height: 1px;
+    background-color: #B0BEC5
+}
+
+@media screen and (max-width: 500px) {
+    .card1 {
+        padding-left: 26px
+    }
+}
